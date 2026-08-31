@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Morgan's View — Morgan Bay</title>
+<meta name="description" content="Morgan's View: a whole-house holiday let on the headland above Morgan Bay, Eastern Cape. Sleeps 9, maximum 6 adults.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Newsreader:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #F6F2EC; color: #14202B; font-family: 'Archivo', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: #A9512E; text-decoration: none; }
+  a:hover { color: #14202B; }
+  input, textarea, select, button { font: inherit; color: inherit; }
+  ::selection { background: #D9CDBC; }
+  @keyframes riseIn { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+  .nav-link { color: #4A5560; transition: color 0.15s; }
+  .nav-link:hover { color: #A9512E; }
+  .btn-outline { padding: 9px 17px; border: 1px solid #14202B; color: #14202B; border-radius: 2px; transition: background 0.15s, color 0.15s; }
+  .btn-outline:hover { background: #14202B; color: #F6F2EC; }
+  .btn-dark { display: inline-block; padding: 15px 28px; background: #14202B; color: #F6F2EC; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; border-radius: 2px; border: 0; cursor: pointer; transition: background 0.15s; }
+  .btn-dark:hover { background: #A9512E; color: #F6F2EC; }
+  .btn-light { display: inline-block; padding: 17px 36px; background: #F6F2EC; color: #14202B; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; border-radius: 2px; transition: background 0.15s; }
+  .btn-light:hover { background: #FFFFFF; }
+  .gallery-btn { padding: 0; border: 0; background: none; cursor: zoom-in; display: block; overflow: hidden; position: relative; }
+  .gallery-btn img { width: 100%; aspect-ratio: 3/2; object-fit: cover; display: block; transition: transform 0.7s cubic-bezier(.2,.7,.2,1), opacity 0.4s; opacity: 0.94; }
+  .gallery-btn:hover img { transform: scale(1.04); opacity: 1; }
+  form input, form textarea, form select { padding: 14px 15px; border: 1px solid rgba(20,32,43,0.18); border-radius: 2px; background: #F6F2EC; font-size: 15px; }
+  form input:focus, form textarea:focus, form select:focus { outline: none; border-color: #14202B; background: #FFFFFF; }
+  #lightbox { position: fixed; inset: 0; z-index: 60; background: rgba(11,20,28,0.94); display: none; align-items: center; justify-content: center; padding: clamp(16px, 4vw, 56px); cursor: zoom-out; animation: riseIn 0.25s ease both; }
+  #lightbox.open { display: flex; }
+  #lightbox img { max-width: 100%; max-height: 100%; object-fit: contain; display: block; }
+</style>
+</head>
+<body>
+
+<nav style="position: fixed; top: 0; left: 0; right: 0; z-index: 40; display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 20px clamp(20px, 5vw, 64px); background: rgba(246,242,236,0.92); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(20,32,43,0.08)">
+  <a href="#top" style="font-family: 'Newsreader', serif; font-size: 19px; letter-spacing: 0.01em; color: #14202B; display: flex; align-items: baseline; gap: 10px">
+    Morgan&rsquo;s View
+    <span style="font-family: 'Archivo', sans-serif; font-size: 9.5px; letter-spacing: 0.22em; text-transform: uppercase; color: #8A8378">Morgan Bay</span>
+  </a>
+  <div style="display: flex; align-items: center; gap: clamp(14px, 2.4vw, 30px); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase">
+    <a class="nav-link" href="#the-house">The house</a>
+    <a class="nav-link" href="#gallery">Gallery</a>
+    <a class="nav-link" href="#area">The area</a>
+    <a class="nav-link" href="#practical">Good to know</a>
+    <a class="btn-outline" href="#contact">Enquire</a>
+  </div>
+</nav>
+
+<div id="top">
+
+  <header style="position: relative; height: 100vh; min-height: 620px; display: flex; align-items: flex-end; overflow: hidden">
+    <img src="https://cdn.jsdelivr.net/gh/justsamran/morgans-view-website@main/images/aerial-coast.jpg" alt="Morgan's View above the beach at Morgan Bay" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
+    <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(11,20,28,0.72) 0%, rgba(11,20,28,0.18) 45%, rgba(11,20,28,0.28) 100%)"></div>
+    <div style="position: relative; width: 100%; padding: 0 clamp(20px, 5vw, 64px) clamp(44px, 7vh, 88px); color: #F6F2EC; animation: riseIn 0.9s ease both">
+      <div style="font-size: 10.5px; letter-spacing: 0.28em; text-transform: uppercase; opacity: 0.78; margin-bottom: 20px">Morgan Bay · Eastern Cape · South Africa</div>
+      <h1 style="font-family: 'Newsreader', serif; font-weight: 300; font-size: clamp(50px, 10.5vw, 148px); line-height: 0.92; letter-spacing: -0.02em; margin: 0 0 24px">Morgan&rsquo;s View</h1>
+      <p style="max-width: 42ch; font-size: clamp(15px, 1.5vw, 18px); line-height: 1.65; margin: 0; color: rgba(246,242,236,0.9)">A house on the headland, where the lawn runs out and the Indian Ocean starts. Whole house, nine beds, and a deck built for doing nothing.</p>
+    </div>
+  </header>
+
+  <section style="padding: clamp(72px, 11vh, 140px) clamp(20px, 5vw, 64px); max-width: 1320px; margin: 0 auto">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(36px, 6vw, 96px); align-items: start">
+      <div>
+        <div style="font-size: 10.5px; letter-spacing: 0.24em; text-transform: uppercase; color: #A9512E; margin-bottom: 26px">The welcome</div>
+        <p style="font-family: 'Newsreader', serif; font-weight: 300; font-size: clamp(24px, 2.7vw, 36px); line-height: 1.32; letter-spacing: -0.01em; margin: 0 0 28px; text-wrap: pretty">We built this house for the view, and then found ourselves living on the deck.</p>
+        <p style="font-size: 15.5px; line-height: 1.78; color: #4A5560; margin: 0 0 18px; max-width: 56ch; text-wrap: pretty">Morgan&rsquo;s View sits high on the point above the main beach, with the sea on one side and grazing land on the other. Everything is on one level, open-plan and full of light: a long kitchen island where people gather, a lounge that opens to the wraparound deck, and bedrooms that all catch the morning.</p>
+        <p style="font-size: 15.5px; line-height: 1.78; color: #4A5560; margin: 0; max-width: 56ch; text-wrap: pretty">It is a quiet house in a quiet village. Come for early swims, long lunches, walks to the cliffs, and the sound of the surf at night. It is not the house for a loud party — and we say that kindly, so nobody is disappointed.</p>
+      </div>
+      <div style="border-top: 1px solid rgba(20,32,43,0.14); padding-top: 8px">
+        <div style="display: flex; justify-content: space-between; gap: 24px; padding: 18px 0; border-bottom: 1px solid rgba(20,32,43,0.1)"><span style="font-size: 10.5px; letter-spacing: 0.18em; text-transform: uppercase; color: #8A8378; padding-top: 3px">Sleeps</span><span style="font-family: 'Newsreader', serif; font-size: 18px; text-align: right; color: #14202B">9 guests, max 6 adults</span></div>
+        <div style="display: flex; justify-content: space-between; gap: 24px; padding: 18px 0; border-bottom: 1px solid rgba(20,32,43,0.1)"><span style="font-size: 10.5px; letter-spacing: 0.18em; text-transform: uppercase; color: #8A8378; padding-top: 3px">The stay</span><span style="font-family: 'Newsreader', serif; font-size: 18px; text-align: right; color: #14202B">Whole house, exclusive use</span></div>
+        <div style="display: flex; justify-content: space-between; gap: 24px; padding: 18px 0; border-bottom: 1px solid rgba(20,32,43,0.1)"><span style="font-size: 10.5px; letter-spacing: 0.18em; text-transform: uppercase; color: #8A8378; padding-top: 3px">Setting</span><span style="font-family: 'Newsreader', serif; font-size: 18px; text-align: right; color: #14202B">Clifftop above the main beach</span></div>
+        <div style="display: flex; justify-content: space-between; gap: 24px; padding: 18px 0; border-bottom: 1px solid rgba(20,32,43,0.1)"><span style="font-size: 10.5px; letter-spacing: 0.18em; text-transform: uppercase; color: #8A8378; padding-top: 3px">Layout</span><span style="font-family: 'Newsreader', serif; font-size: 18px; text-align: right; color: #14202B">Single level, open plan</span></div>
+        <div style="display: flex; justify-content: space-between; gap: 24px; padding: 18px 0; border-bottom: 1px solid rgba(20,32,43,0.1)"><span style="font-size: 10.5px; letter-spacing: 0.18em; text-transform: uppercase; color: #8A8378; padding-top: 3px">Suited to</span><span style="font-family: 'Newsreader', serif; font-size: 18px; text-align: right; color: #14202B">Families and small groups</span></div>
+        <a href="#contact" class="btn-dark" style="margin-top: 30px">Check our dates</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="the-house" style="padding: clamp(20px, 3vh, 40px) clamp(20px, 5vw, 64px) clamp(72px, 11vh, 130px); max-width: 1320px; margin: 0 auto">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(28px, 4vw, 56px)">
+      <figure style="margin: 0; grid-column: span 2; min-width: 0">
+        <img src="https://cdn.jsdelivr.net/gh/justsamran/morgans-view-website@main/images/deck-view.jpg" alt="Covered deck looking over the beach" style="width: 100%; aspect-ratio: 16/10; object-fit: cover; display: block">
+        <figcaption style="margin-top: 14px; font-size: 13px; line-height: 1.6; color: #4A5560">The covered deck runs the length of the house. Two benches, one direction to look.</figcaption>
+      </figure>
+      <figure style="margin: 0; align-self: end; min-width: 0">
+        <img src="https://cdn.jsdelivr.net/gh/justsamran/morgans-view-website@main/images/kitchen-island.jpg" alt="Kitchen island with bar stools and pendant lighting" style="width: 100%; aspect-ratio: 4/5; object-fit: cover; display: block">
+        <figcaption style="margin-top: 14px; font-size: 13px; line-height: 1.6; color: #4A5560">The kitchen island, with bar stools for four and pendant lights above.</figcaption>
+      </figure>
+      <figure style="margin: 0; min-width: 0">
+        <img src="https://cdn.jsdelivr.net/gh/justsamran/morgans-view-website@main/images/bed-main.jpg" alt="Main bedroom with king bed and armchair" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block">
+        <figcaption style="margin-top: 14px; font-size: 13px; line-height: 1.6; color: #4A5560">Main bedroom, king bed, with a reading chair by the window.</figcaption>
+      </figure>
+      <figure style="margin: 0; min-width: 0">
+        <img src="https://cdn.jsdelivr.net/gh/justsamran/morgans-view-website@main/images/bed-deck.jpg" alt="Bedroom opening onto the deck with sea view" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block">
+        <figcaption style="margin-top: 14px; font-size: 13px; line-height: 1.6; color: #4A5560">A second room opens straight onto the deck, so you wake up to the bay.</figcaption>
+      </figure>
+      <figure style="margin: 0; min-width: 0">
+        <img src="https://cdn.jsdelivr.net/gh/justsamran/morgans-view-website@main/images/living-lounge.jpg" alt="Open-plan lounge with loft above" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block">
+        <figcaption style="margin-top: 14px; font-size: 13px; line-height: 1.6; color: #4A5560">The lounge, with the ladder up to the loft — always the children&rsquo;s first claim.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="gallery" style="background: #14202B; color: #F6F2EC; padding: clamp(72px, 11vh, 130px) clamp(20px, 5vw, 64px)">
+    <div style="max-width: 1320px; margin: 0 auto">
+      <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 16px; margin-bottom: clamp(32px, 5vh, 56px)">
+        <h2 style="font-family: 'Newsreader', serif; font-weight: 300; font-size: clamp(32px, 4.6vw, 60px); line-height: 1; letter-spacing: -0.01em; margin: 0">The house, room by room</h2>
+        <span style="font-size: 10.5px; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(246,242,236,0.55)">Tap any photograph</span>
+      </div>
+      <div id="gallery-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px"></div>
+    </div>
+  </section>
+
+  <section id="area" style="padding: clamp(72px, 11vh, 130px) clamp(20px, 5vw, 64px); max-width: 1320px; margin: 0 auto">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(36px, 6vw, 88px); align-items: start">
+      <div style="min-width: 0">
+        <img src="https://cdn.jsdelivr.net/gh/justsamran/morgans-view-website@main/images/aerial-house.jpg" alt="Aerial view of the house on the point above the beach" style="width: 100%; aspect-ratio: 5/4; object-fit: cover; display: block">
+      </div>
+      <div>
+        <div style="font-size: 10.5px; letter-spacing: 0.24em; text-transform: uppercase; color: #A9512E; margin-bottom: 26px">The village</div>
+        <h2 style="font-family: 'Newsreader', serif; font-weight: 300; font-size: clamp(30px, 4vw, 52px); line-height: 1.08; letter-spacing: -0.015em; margin: 0 0 26px; text-wrap: pretty">Morgan Bay does very little, very well.</h2>
+        <p style="font-size: 15.5px; line-height: 1.78; color: #4A5560; margin: 0 0 32px; max-width: 54ch; text-wrap: pretty">A handful of streets, a long stretch of sand, a lagoon at one end and the cliffs at the other. There is a hotel with a restaurant and a pub, a small shop for the essentials, and not much else to interrupt you.</p>
+        <div style="display: grid; gap: 2px">
+          <div style="display: grid; grid-template-columns: 1fr; gap: 6px; padding: 20px 0; border-top: 1px solid rgba(20,32,43,0.12)"><div style="font-family: 'Newsreader', serif; font-size: 20px; color: #14202B">The beach</div><div style="font-size: 14px; line-height: 1.65; color: #6B7480; max-width: 52ch">A wide, long stretch of sand a short walk down from the house, with rock pools at low tide.</div></div>
+          <div style="display: grid; grid-template-columns: 1fr; gap: 6px; padding: 20px 0; border-top: 1px solid rgba(20,32,43,0.12)"><div style="font-family: 'Newsreader', serif; font-size: 20px; color: #14202B">The cliffs</div><div style="font-size: 14px; line-height: 1.65; color: #6B7480; max-width: 52ch">The walk to the Morgan Bay cliffs and back is the thing everyone remembers. Go late afternoon.</div></div>
+          <div style="display: grid; grid-template-columns: 1fr; gap: 6px; padding: 20px 0; border-top: 1px solid rgba(20,32,43,0.12)"><div style="font-family: 'Newsreader', serif; font-size: 20px; color: #14202B">The lagoon</div><div style="font-size: 14px; line-height: 1.65; color: #6B7480; max-width: 52ch">Flat water at the far end of the beach for paddling, kayaks and small children.</div></div>
+          <div style="display: grid; grid-template-columns: 1fr; gap: 6px; padding: 20px 0; border-top: 1px solid rgba(20,32,43,0.12)"><div style="font-family: 'Newsreader', serif; font-size: 20px; color: #14202B">Eating out</div><div style="font-size: 14px; line-height: 1.65; color: #6B7480; max-width: 52ch">The hotel deck, Salty or Bayview restaurant are options. Book ahead in season.</div></div>
+          <div style="display: grid; grid-template-columns: 1fr; gap: 6px; padding: 20px 0; border-top: 1px solid rgba(20,32,43,0.12)"><div style="font-family: 'Newsreader', serif; font-size: 20px; color: #14202B">Further afield</div><div style="font-size: 14px; line-height: 1.65; color: #6B7480; max-width: 52ch">Kei Mouth and the ferry across to the Wild Coast make an easy day trip.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="practical" style="background: #E9E2D7; padding: clamp(72px, 11vh, 130px) clamp(20px, 5vw, 64px)">
+    <div style="max-width: 1320px; margin: 0 auto">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(36px, 6vw, 88px); align-items: start">
+        <div>
+          <div style="font-size: 10.5px; letter-spacing: 0.24em; text-transform: uppercase; color: #A9512E; margin-bottom: 26px">Good to know</div>
+          <h2 style="font-family: 'Newsreader', serif; font-weight: 300; font-size: clamp(30px, 4vw, 52px); line-height: 1.08; letter-spacing: -0.015em; margin: 0 0 26px; text-wrap: pretty">A quiet house, honestly described.</h2>
+          <p style="font-size: 15.5px; line-height: 1.78; color: #4A5560; margin: 0; max-width: 50ch; text-wrap: pretty">Morgan&rsquo;s View sleeps nine, with a maximum of six adults. It is a noise-sensitive house with neighbours close by, so it suits families and small groups rather than celebrations. If you are looking for somewhere to be loud, we would rather tell you now than after you arrive.</p>
+        </div>
+        <div style="display: grid; gap: 0">
+          <div style="display: grid; grid-template-columns: 130px 1fr; gap: 20px; padding: 20px 0; border-top: 1px solid rgba(20,32,43,0.16)"><div style="font-size: 10.5px; letter-spacing: 0.16em; text-transform: uppercase; color: #8A8378; padding-top: 4px">Noise</div><div style="font-size: 14.5px; line-height: 1.7; color: #37424E">A noise-sensitive house with close neighbours. No parties or events, and quiet after 10pm.</div></div>
+          <div style="display: grid; grid-template-columns: 130px 1fr; gap: 20px; padding: 20px 0; border-top: 1px solid rgba(20,32,43,0.16)"><div style="font-size: 10.5px; letter-spacing: 0.16em; text-transform: uppercase; color: #8A8378; padding-top: 4px">Guests</div><div style="font-size: 14.5px; line-height: 1.7; color: #37424E">Nine beds, but no more than six adults. Please tell us who is coming.</div></div>
+          <div style="display: grid; grid-template-columns: 130px 1fr; gap: 20px; padding: 20px 0; border-top: 1px solid rgba(20,32,43,0.16)"><div style="font-size: 10.5px; letter-spacing: 0.16em; text-transform: uppercase; color: #8A8378; padding-top: 4px">Self-catering</div><div style="font-size: 14.5px; line-height: 1.7; color: #37424E">Fully equipped kitchen, gas hob, double oven, dishwasher and braai. Bring your own groceries.</div></div>
+          <div style="display: grid; grid-template-columns: 130px 1fr; gap: 20px; padding: 20px 0; border-top: 1px solid rgba(20,32,43,0.16)"><div style="font-size: 10.5px; letter-spacing: 0.16em; text-transform: uppercase; color: #8A8378; padding-top: 4px">Getting around</div><div style="font-size: 14.5px; line-height: 1.7; color: #37424E">Own transport is advisable. Secure off-street parking at the house.</div></div>
+          <div style="display: grid; grid-template-columns: 130px 1fr; gap: 20px; padding: 20px 0; border-top: 1px solid rgba(20,32,43,0.16)"><div style="font-size: 10.5px; letter-spacing: 0.16em; text-transform: uppercase; color: #8A8378; padding-top: 4px">Smoking</div><div style="font-size: 14.5px; line-height: 1.7; color: #37424E">Outside only, on the deck, and please take the ash with you.</div></div>
+          <div style="display: grid; grid-template-columns: 130px 1fr; gap: 20px; padding: 20px 0; border-top: 1px solid rgba(20,32,43,0.16)"><div style="font-size: 10.5px; letter-spacing: 0.16em; text-transform: uppercase; color: #8A8378; padding-top: 4px">Booking</div><div style="font-size: 14.5px; line-height: 1.7; color: #37424E">Enquire by email for direct dates, or book through our Airbnb listing.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="position: relative; padding: clamp(90px, 16vh, 190px) clamp(20px, 5vw, 64px); overflow: hidden">
+    <img src="https://cdn.jsdelivr.net/gh/justsamran/morgans-view-website@main/images/deck-benches.jpg" alt="Deck with benches above the sea" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
+    <div style="position: absolute; inset: 0; background: rgba(11,20,28,0.5)"></div>
+    <div style="position: relative; max-width: 1320px; margin: 0 auto; color: #F6F2EC; text-align: center">
+      <h2 style="font-family: 'Newsreader', serif; font-weight: 300; font-size: clamp(32px, 5.4vw, 72px); line-height: 1.05; letter-spacing: -0.015em; margin: 0 0 22px">Come and see the view</h2>
+      <p style="font-size: 15.5px; line-height: 1.7; max-width: 46ch; margin: 0 auto 36px; color: rgba(246,242,236,0.88)">Tell us your dates and how many of you there are. We answer every enquiry ourselves.</p>
+      <a href="#contact" class="btn-light">Enquire about a stay</a>
+    </div>
+  </section>
+
+</div>
+
+<div id="contact" style="padding: calc(clamp(72px, 11vh, 130px) + 68px) clamp(20px, 5vw, 64px) clamp(72px, 11vh, 130px); max-width: 1320px; margin: 0 auto">
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: clamp(40px, 6vw, 96px); align-items: start">
+
+    <div>
+      <div style="font-size: 10.5px; letter-spacing: 0.24em; text-transform: uppercase; color: #A9512E; margin-bottom: 26px">Enquiries</div>
+      <h1 style="font-family: 'Newsreader', serif; font-weight: 300; font-size: clamp(38px, 5.2vw, 68px); line-height: 1.03; letter-spacing: -0.02em; margin: 0 0 26px; text-wrap: pretty">Get in touch</h1>
+      <p style="font-size: 15.5px; line-height: 1.78; color: #4A5560; margin: 0 0 40px; max-width: 46ch; text-wrap: pretty">Send us your dates and the number of guests and we will come back to you with availability and a rate. If you would rather book through Airbnb, that works too.</p>
+
+      <div style="border-top: 1px solid rgba(20,32,43,0.14); padding: 20px 0; display: grid; gap: 6px">
+        <div style="font-size: 10.5px; letter-spacing: 0.18em; text-transform: uppercase; color: #8A8378">Email</div>
+        <a href="mailto:samcsnyman@gmail.com" style="font-family: 'Newsreader', serif; font-size: 21px">Email us</a>
+      </div>
+      <div style="border-top: 1px solid rgba(20,32,43,0.14); padding: 20px 0; display: grid; gap: 6px">
+        <div style="font-size: 10.5px; letter-spacing: 0.18em; text-transform: uppercase; color: #8A8378">Where</div>
+        <div style="font-family: 'Newsreader', serif; font-size: 21px">Morgan Bay, Eastern Cape</div>
+      </div>
+      <div style="border-top: 1px solid rgba(20,32,43,0.14); border-bottom: 1px solid rgba(20,32,43,0.14); padding: 20px 0; display: grid; gap: 6px">
+        <div style="font-size: 10.5px; letter-spacing: 0.18em; text-transform: uppercase; color: #8A8378">The house</div>
+        <div style="font-family: 'Newsreader', serif; font-size: 21px">Sleeps 9 · maximum 6 adults</div>
+      </div>
+
+      <img src="https://cdn.jsdelivr.net/gh/justsamran/morgans-view-website@main/images/approach.jpg" alt="The driveway up to the house" style="width: 100%; aspect-ratio: 3/2; object-fit: cover; display: block; margin-top: 40px">
+      <p style="font-size: 13px; line-height: 1.65; color: #6B7480; margin: 14px 0 0">Getting here: Morgan Bay is roughly an hour and a half from East London along the R349, the last stretch signposted from Kei Road. Directions and the gate code come with your booking confirmation.</p>
+    </div>
+
+    <form id="enquiry-form" style="background: #FFFDFA; border: 1px solid rgba(20,32,43,0.12); padding: clamp(24px, 3.4vw, 44px); display: grid; gap: 22px">
+      <div style="display: grid; gap: 9px">
+        <label for="cf-name" style="font-size: 10.5px; letter-spacing: 0.18em; text-transform: uppercase; color: #8A8378">Your name</label>
+        <input id="cf-name" name="name" type="text" required placeholder="Jane Snyman">
+      </div>
+      <div style="display: grid; gap: 9px">
+        <label for="cf-email" style="font-size: 10.5px; letter-spacing: 0.18em; text-transform: uppercase; color: #8A8378">Email</label>
+        <input id="cf-email" name="email" type="email" required placeholder="you@example.com">
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px">
+        <div style="display: grid; gap: 9px">
+          <label for="cf-in" style="font-size: 10.5px; letter-spacing: 0.18em; text-transform: uppercase; color: #8A8378">Arriving</label>
+          <input id="cf-in" name="arrive" type="date">
+        </div>
+        <div style="display: grid; gap: 9px">
+          <label for="cf-out" style="font-size: 10.5px; letter-spacing: 0.18em; text-transform: uppercase; color: #8A8378">Leaving</label>
+          <input id="cf-out" name="depart" type="date">
+        </div>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px">
+        <div style="display: grid; gap: 9px">
+          <label for="cf-adults" style="font-size: 10.5px; letter-spacing: 0.18em; text-transform: uppercase; color: #8A8378">Adults</label>
+          <select id="cf-adults" name="adults">
+            <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option>
+          </select>
+        </div>
+        <div style="display: grid; gap: 9px">
+          <label for="cf-children" style="font-size: 10.5px; letter-spacing: 0.18em; text-transform: uppercase; color: #8A8378">Children</label>
+          <select id="cf-children" name="children">
+            <option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option>
+          </select>
+        </div>
+      </div>
+      <div style="display: grid; gap: 9px">
+        <label for="cf-msg" style="font-size: 10.5px; letter-spacing: 0.18em; text-transform: uppercase; color: #8A8378">Anything else</label>
+        <textarea id="cf-msg" name="message" rows="5" placeholder="Two families, one dog-free weekend, hoping for the Easter break." style="resize: vertical; line-height: 1.6"></textarea>
+      </div>
+      <button type="submit" class="btn-dark">Send enquiry</button>
+      <p style="font-size: 12.5px; line-height: 1.6; color: #8A8378; margin: 0">This opens your email programme with the details filled in, so you can see exactly what reaches us.</p>
+    </form>
+
+  </div>
+</div>
+
+<footer style="border-top: 1px solid rgba(20,32,43,0.12); padding: 46px clamp(20px, 5vw, 64px); display: flex; flex-wrap: wrap; gap: 18px; align-items: baseline; justify-content: space-between">
+  <div style="font-family: 'Newsreader', serif; font-size: 17px">Morgan&rsquo;s View — Morgan Bay</div>
+  <div style="display: flex; flex-wrap: wrap; gap: 24px; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #8A8378">
+    <a class="nav-link" href="mailto:samcsnyman@gmail.com">Email us</a>
+    <a class="nav-link" href="#contact">Enquire</a>
+  </div>
+</footer>
+
+<div id="lightbox">
+  <img id="lightbox-img" src="" alt="">
+  <div style="position: absolute; bottom: 22px; left: 0; right: 0; text-align: center; font-size: 10.5px; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(246,242,236,0.6)">Click anywhere to close</div>
+</div>
+
+<script>
+  var gallery = [
+    ['https://cdn.jsdelivr.net/gh/justsamran/morgans-view-website@main/images/deck-view.jpg', 'The covered deck above the beach'],
+    ['https://cdn.jsdelivr.net/gh/justsamran/morgans-view-website@main/images/living-entrance.jpg', 'Living room opening onto the wraparound deck'],
+    ['https://cdn.jsdelivr.net/gh/justsamran/morgans-view-website@main/images/kitchen.jpg', 'Kitchen with gas hob and pantry'],
+    ['https://cdn.jsdelivr.net/gh/justsamran/morgans-view-website@main/images/kitchen-island.jpg', 'Kitchen island with bar stools'],
+    ['https://cdn.jsdelivr.net/gh/justsamran/morgans-view-website@main/images/living-lounge.jpg', 'Lounge with loft above'],
+    ['https://cdn.jsdelivr.net/gh/justsamran/morgans-view-website@main/images/bed-main.jpg', 'Main bedroom with king bed and armchair'],
+    ['https://cdn.jsdelivr.net/gh/justsamran/morgans-view-website@main/images/bed-deck.jpg', 'Bedroom opening onto the deck'],
+    ['https://cdn.jsdelivr.net/gh/justsamran/morgans-view-website@main/images/bed-queen.jpg', 'Queen bedroom with en-suite'],
+    ['https://cdn.jsdelivr.net/gh/justsamran/morgans-view-website@main/images/bed-twin.jpg', 'Twin bedroom'],
+    ['https://cdn.jsdelivr.net/gh/justsamran/morgans-view-website@main/images/aerial-house.jpg', 'The house on the point'],
+    ['https://cdn.jsdelivr.net/gh/justsamran/morgans-view-website@main/images/aerial-coast.jpg', 'Morgan Bay from above'],
+    ['https://cdn.jsdelivr.net/gh/justsamran/morgans-view-website@main/images/approach.jpg', 'The driveway up to the house']
+  ];
+
+  var grid = document.getElementById('gallery-grid');
+  gallery.forEach(function (g) {
+    var btn = document.createElement('button');
+    btn.className = 'gallery-btn';
+    var img = document.createElement('img');
+    img.src = g[0];
+    img.alt = g[1];
+    img.loading = 'lazy';
+    btn.appendChild(img);
+    btn.addEventListener('click', function () { openLightbox(g[0], g[1]); });
+    grid.appendChild(btn);
+  });
+
+  var lightbox = document.getElementById('lightbox');
+  var lightboxImg = document.getElementById('lightbox-img');
+  function openLightbox(src, alt) {
+    lightboxImg.src = src;
+    lightboxImg.alt = alt;
+    lightbox.classList.add('open');
+  }
+  function closeLightbox() {
+    lightbox.classList.remove('open');
+  }
+  lightbox.addEventListener('click', closeLightbox);
+  window.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeLightbox();
+  });
+
+  document.getElementById('enquiry-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var f = e.target;
+    var v = function (n) { return f.elements[n] ? f.elements[n].value : ''; };
+    var body = [
+      'Name: ' + v('name'),
+      'Email: ' + v('email'),
+      'Arriving: ' + (v('arrive') || 'flexible'),
+      'Leaving: ' + (v('depart') || 'flexible'),
+      'Guests: ' + v('adults') + ' adults, ' + v('children') + ' children',
+      '',
+      v('message')
+    ].join('\n');
+    window.location.href = 'mailto:samcsnyman@gmail.com'
+      + '?subject=' + encodeURIComponent('Morgan’s View enquiry — ' + v('name'))
+      + '&body=' + encodeURIComponent(body);
+  });
+</script>
+
+</body>
+</html>
